@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky: Children of Light</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <nav>
+      <a href="#game">Sobre</a>
+      <a href="#images">Fotos</a>
+      <!-- <a href="#roadmap">Mapa</a> -->
+      <a href="#history">Historia</a>
+      <a href="#trailer">Trailer</a>
+    </nav>
+    <a href="https://store.steampowered.com/app/2325290/Sky__Filhos_da_Luz/" target="_blank"
+      class="explore-btn">Explore mais</a>
+  </header>
+
+  <section class="game">
+    <h1>Sky: Children of light</h1>
+    <section class="game-description">
+      <div class="container">
+        <p>
+          Um jogo encantador de exploração e aventura em um mundo mágico. Os jogadores coletam luz,
+           ajudam espíritos, exploram sete reinos únicos e colaboram para restaurar constelações, 
+           em uma experiência emocionante e visualmente deslumbrante.
+        </p>
+      </div>
+    </section>
+  </section>
+
+  <section class="photos" id="images">
+    <div class="container">
+      <h2>Fotos</h2>
+      <div class="slideshow">
+        <div class="arrows">
+          <button id="switch" class="prev" onclick="prevSlide()">&#10094;</button>
+          <button id="switch" class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div class="slides">
+          <img src="assets/sky1.jpg" alt="Imagem 1" class="slideImage">
+          <img src="assets/sky4.jpg" alt="Imagem 4" class="slideImage">
+          <img src="assets/sky2.jpg" alt="Imagem 2" class="slideImage">
+          <img src="assets/sky3.jpg" alt="Imagem 3" class="slideImage">
+        </div>
+        <div class="navigation">
+          <label for="slide1" class="nav-btn"></label>
+          <label for="slide2" class="nav-btn"></label>
+          <label for="slide3" class="nav-btn"></label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="map" id="roadmap">
+    <div class="container">
+      <h2>Mapa</h2>
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no"
+        src="https://maps.google.com/maps?width=100%25&amp;height=900&amp;hl=en&amp;q=Paris%20France+(France)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </div>
+    </div>
+  </section> -->
+
+  <section class="history" id="history">
+    <div class="container">
+      <h2>Historia</h2>
+      <div class="history-container">
+        <img src="assets/mcsky.webp" alt="Arno Victor" class="history-image">
+        <div class="history-text">
+          <p>
+            O protagonista de Sky é um "Filho da Luz", cuja missão é levar
+             esperança e restaurar a luz perdida aos reinos. Ele ajuda espíritos a recuperar
+              memórias, coleta luz para iluminar constelações e guia almas esquecidas, 
+              enfrentando desafios em uma jornada de colaboração, redenção e descoberta espiritual.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gameplay" id="trailer">
+    <div class="container">
+      <h2>Trailer</h2>
+      <div class="gameplay-container">
+        <iframe width="100%" height="750" src="https://www.youtube.com/embed/feOR2GZxs2s"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="purchase" id="purchase">
+    <div class="container">
+      <h2>Comprar Jogo</h2>
+      <form action="#" method="POST" class="purchase-form">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+        <label for="platform">Plataforma</label>
+        <select id="platform" name="platform" required>
+          <option value="PC">PC</option>
+          <option value="XBOX">XBOX</option>
+          <option value="PLAYSTATION">PLAYSTATION</option>
+        </select>
+
+        <label for="quantity">Quantidade de horas jogadas</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Quantidade" required min="1">
+
+        <label for="address">Comentario</label>
+        <textarea id="Expectativas" placeholder="" required></textarea>
+
+        <button type="submit" class="explore-btn">Comprar Agora</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+
+</html>
